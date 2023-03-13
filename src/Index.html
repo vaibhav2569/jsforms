@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form validation</title>
+    <script src="./JS/script.js"></script>
+    <link rel="stylesheet" href="./CSS/styles.css">
+</head>
+<body>
+    <!-- container -->
+    <div class="container">
+        <!-- form -->
+        <form  onsubmit=" return validate()"  >
+            <label for="age">Age:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+           <input  id="age" type="number" name="age" required />
+           <span id="ageError"></span>
+           <br><br>
+           <label for="weight">Weight:</label>
+           <input id="weight" type="number" name="weight" required />
+           <span id="weightError"></span>
+           <br><br>
+           <input type="submit" >
+           <div id="message"></div>
+        </form>
+    </div>
+    
+</body>
+</html>
